@@ -1,6 +1,7 @@
+/* header */
 .header {
     height: 80px;
-    background-color: #ffffff;
+    background-color: black;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 4px 4px 0 rgba(0, 0, 0, 0.08);
   }
   .header .bar {
@@ -8,4 +9,9 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    z-index: 1;
+  }
+  .header__logo img {
+    height: 80px;
+    width: auto;
   }
