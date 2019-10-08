@@ -50,10 +50,22 @@ html {
 .header__nav .item{
   height: 100%;
   padding: 0 8px;
-  margin: 0 8px;
+  margin: 10 8px;
   display: flex;
   align-items: center;
   position: relative;
   justify-content: space-around ;
+  width: 100%;
 
+}
+a.linkitem:link, a.linkitem:visited
+{
+color:white;
+text-decoration:none;
+}
+ 
+a.linkitem:hover
+{
+color: red;
+font-weight:bold;
 }
