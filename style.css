@@ -36,6 +36,7 @@ html {
   align-items: center;
   height: 100%;
   z-index: 1;
+  width: 100%;
 }
 .header__logo img {
   height: 80px;
@@ -44,6 +45,7 @@ html {
 .header__nav{
   display: flex;
   height: 100%;
+  width: 50%;
 }
 .header__nav .item{
   height: 100%;
@@ -52,5 +54,6 @@ html {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: space-around ;
 
 }
