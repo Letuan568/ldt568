@@ -23,6 +23,7 @@ html {
     width: 100%;
     background-color: black;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+    z-index: 2;
   }
 .header .content-width {
   display: flex;
