@@ -18,6 +18,7 @@ html {
 }
 /* header */
 .header {
+    z-index: 2;
     position: fixed;
     height: 80px;
     width: 100%;
@@ -35,7 +36,7 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 .header__logo img {
@@ -68,4 +69,26 @@ a.linkitem:hover
 {
 color: red;
 font-weight:bold;
+}
+/* section */
+.w3-center {
+  padding-top: 80px;
+  text-align: center;
+}
+.w3-display-middle {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: black;
+  font-size: 80px;
+  position: relative;
+
+}
+.main{
+  padding-top: 80px;
 }
