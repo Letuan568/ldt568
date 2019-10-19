@@ -65,11 +65,22 @@ a.linkitem:link, a.linkitem:visited
 color:white;
 text-decoration:none;
 }
+a.linkitem1:link, a.linkitem1:visited
+{
+color:black;
+text-decoration:none;
+}
  
 a.linkitem:hover
 {
 color: red;
 font-weight:bold;
+}
+a.linkitem1:hover, .contact-infor-1:hover{
+  color: red;
+}
+.contact-infor-1{
+  margin: 0px;
 }
 /* section */
 .w3-center {
@@ -104,9 +115,30 @@ h2 {
 }
 .bike-name-item:hover{
   color: red;
-  font-size: 20px;
+  font-size: 15px;
 }
 footer{
   background-color:#F7F7F7;
   padding: 50px;
+}
+.contact-title{
+  padding-bottom: 10px;
+}
+.menu{
+  padding: 20px;
+  padding-top: 0px;
+  /* border-right: 1px solid; */
+}
+.contact-title-content{
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  color: red;
+}
+.title-content{
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 100;
 }
