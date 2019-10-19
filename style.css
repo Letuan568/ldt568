@@ -88,12 +88,17 @@ h2 {
   color: black;
   font-size: 80px;
   position: relative;
-
+  text-align: center;
 }
 .main{
   padding-top: 80px;
 }
+.title{
+  padding-bottom: 15px;
+}
 
-#ebike{
+#ebike .container {
   position: relative;
+  height: 100%;
+  width: 100%;
 }
