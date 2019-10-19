@@ -102,3 +102,11 @@ h2 {
   height: 100%;
   width: 100%;
 }
+.bike-name-item:hover{
+  color: red;
+  font-size: 20px;
+}
+footer{
+  background-color:#F7F7F7;
+  padding: 50px;
+}
