@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction(id) {
+        console.log(id)
+        var elmnt = document.getElementById(id);
+        console.log(elmnt)
+        elmnt.scrollIntoView({behavior:"smooth"});
+        }
+    </script>
 </head>
 
 <body>
@@ -36,10 +44,12 @@
                 </div>
                 <nav class="header__nav">
                     <div class="item">
-                        <a class='linkitem' href="#car">Ô TÔ</a>
-                        <a class='linkitem' href="#mbike">XE MÁY</a>
-                        <a class='linkitem' href="#ebike">XE ĐIỆN</a>
-                        <a class='linkitem' href="#contact">LIÊN HỆ</a>
+
+                        <span class='linkitem' onclick="myFunction('car')">Ô TÔ</span>
+                        <span class='linkitem' onclick="myFunction('mbike')">XE MÁY</span>
+                        <span class='linkitem' onclick="myFunction('ebike')">XE ĐIỆN</span>
+                        <span class='linkitem' onclick="myFunction('contact')">LIÊN HỆ</span>
+        
                     </div>
 
                 </nav>
