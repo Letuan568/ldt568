@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <style>
         .carousel-inner img {
             width: 100%;
@@ -18,8 +19,17 @@
         }
     </style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction(id) {
+        console.log(id)
+        var elmnt = document.getElementById(id);
+        console.log(elmnt)
+        elmnt.scrollIntoView({behavior:"smooth"});
+        }
+    </script>
 </head>
 
 <body>
@@ -34,10 +44,12 @@
                 </div>
                 <nav class="header__nav">
                     <div class="item">
-                        <a class='linkitem' href="#car">Ô TÔ</a>
-                        <a class='linkitem' href="#mbike">XE MÁY</a>
-                        <a class='linkitem' href="#ebike">XE ĐIỆN</a>
-                        <a class='linkitem' href="#contact">LIÊN HỆ</a>
+
+                        <span class='linkitem' onclick="myFunction('car')">Ô TÔ</span>
+                        <span class='linkitem' onclick="myFunction('mbike')">XE MÁY</span>
+                        <span class='linkitem' onclick="myFunction('ebike')">XE ĐIỆN</span>
+                        <span class='linkitem' onclick="myFunction('contact')">LIÊN HỆ</span>
+        
                     </div>
 
                 </nav>
@@ -45,7 +57,7 @@
         </div>
     </header>
     <main>
-        <div id="demo" class="carousel slide" data-ride="carousel">
+        <div id="demo" class="carousel slide" data-ride="carousel" style="padding-top: 80px;">
 
             <!-- Indicators -->
             <ul class="carousel-indicators">
@@ -78,18 +90,133 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
-        <section id="car"></section>
-        <section id="mbike">
+        <section id="car">
+                <div class="containercar"  style="background-color: rgb(255, 248, 226);">
+                        <div class="car discribe">
+                            <div style="height: 25px ;width: 437px ;font-size: 26px;">
+                                <h3 style="font-weight: bold; font-family: Tahoma;" >LUX A2.0 VÀ LUX SA2.0</h3>
+                            </div>
+                            <div style="height: 134px ; width: 437px ;font-size:16px">
+                                <p style="display : block; margin-left:auto; margin-right: auto; font-family: Verdana" >
+                                    Từ thiết kế logo đến hình dáng thân xe với những nét uốn lượn mang dáng dấp của những cảnh quan đất nước, cho đến hình ảnh trên nền màn hình cảm ứng của bảng điều khiển, Lux A2.0 và Lux SA2.0 sở hữu một thiết kế đẳng cấp mang tinh thần và bản sắc của đất nước Việt Nam nhưng đủ sức hút để khuất phục cả cộng đồng quốc tế.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PozDqxu1eK0?rel=0&autoplay=1&loop=1&playlist=PozDqxu1eK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="containercarlist"  style="background-color: rgb(255, 248, 226);">
+                        <div class="containerfadil">
+                            <div><img style="height: 290px" src="https://vinfast-auto.vn/wp-content/uploads/2019/04/VinFast-Fadil-VinFast-Auto-An-Tha%CC%81i.png" alt="fadil"></div>
+                            <a class="xe fadil" href="#popup1">
+                                <div style="font-weight: bold;font-family: Tahoma;font-size: 12px;text-align: center">Fadil</div>
+                                <div style="text-align: center">GIÁ: 500 Tr VND</div>
+                            </a>
+                        </div>
+                        <div class="containersedal">
+                            <div><img style="height: 290px" src="http://baogiaxevinfast.com.vn/upload/product/vinfastluxaorange-4017.png" alt="sedal"></div>
+                            <a class="xe sedal" href="#popup1">
+                                <div style="font-weight: bold;font-family: Tahoma;font-size: 12px;text-align: center">Sedal</div>
+                                <div style="text-align: center">GIÁ: 990 Tr VND</div>
+                            </a>    
+                        </div>
+                        <div class="containersuv">
+                            <div><img style="height: 290px" src="https://product.hstatic.net/1000333079/product/b2_white_master.png" alt="suv"></div>
+                            <a class="xe suv" href="#popup1">
+                                <div style="font-weight: bold;font-family: Tahoma;font-size: 12px; text-align: center">SUV</div>
+                                <div style="text-align: center">GIÁ: 1 Tỷ 700 Tr VND</div>
+                            </a>
+                        </div>
+                    </div>
+                
         </section>
-        <section id="ebike">
-            <img src="https://vcdn-vnexpress.vnecdn.net/2018/11/25/VinFastKlaraVnE01500TOP-154313-3702-1833-1543139003_1200x0.jpg"
-                style=" width : 100%; height : 100% " alt="xe-may-dien-vinfast">
-            <div class="w3-center w3-display-middle">
-                <h2>Xe máy điện</h2>
+        <section id="mbike" style="padding-top: 80px; padding-bottom: 80px;">
+             <div class="title">
+                <h2 class="title-content">Phân Khối Lớn </h2>
             </div>
+            <img src="https://muasamxe.com/wp-content/uploads/2018/06/Ducati-Panigale-V4-2018.jpg"
+            style=" width : 100%; height : 100%" alt="xe-may-dien-vinfast">
             <div class="container">
-                <img src="https://vcdn-vnexpress.vnecdn.net/2018/11/25/VinFastKlaraVnE01500TOP-154313-3702-1833-1543139003_1200x0.jpg"
-                style=" width : 100%; height : 100%; border-radius: 20px; " alt="xe-may-dien-vinfast">
+                <div class="w3-row-padding" style="padding: 0;">
+                    <div class="w3-third">
+                        <div class="w3-card-4" style="border-radius: 20px; margin-top: 10%">
+                            <div class="img">
+                                <img src="https://media-ak.static-adayroi.com/240_240/80/ha3/h19/26524208857118.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
+                            </div>
+                            <div class="w3-container w3-center" style="padding: inherit;">
+                                <p class="bike-name-item">Ducati Scrambler Sixty2 </p>
+                                <p style="color: red;">296.900.000VND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                            <div class="w3-card-4" style="border-radius: 20px; margin-top: 10%">
+                                <div class="img">
+                                    <img src="https://media-ak.static-adayroi.com/240_240/80/h08/h46/26524201582622.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
+                                </div>
+                                <div class="w3-container w3-center" style="padding: inherit;">
+                                    <p class="bike-name-item">Ducati Monster 757 (Đỏ)</p>
+                                    <p style="color: red;">335.000.000VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third">
+                                <div class="w3-card-4" style="border-radius: 20px; margin-top: 10%">
+                                    <div class="img">
+                                        <img src="https://media-ak.static-adayroi.com/240_240/80/hf6/ha6/26529473691678.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
+                                    </div>
+                                    <div class="w3-container w3-center" style="padding: inherit;">
+                                        <p class="bike-name-item">Ducati SuperSport</p>
+                                        <p style="color: red;">488.000.000VND</p>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="w3-row-padding" style="padding: 0;">
+                        <div class="w3-third">
+                            <div class="w3-card-4" style="border-radius: 20px; margin-top: 10%">
+                                <div class="img">
+                                    <img src="https://media-ak.static-adayroi.com/240_240/80/hc6/h1c/26523071479838.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
+                                </div>
+                                <div class="w3-container w3-center" style="padding: inherit;">
+                                    <p class="bike-name-item">Ducati SuperSportS </p>
+                                    <p style="color: red;">538.000.000VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third">
+                                <div class="w3-card-4" style="border-radius: 20px; margin-top: 10%">
+                                    <div class="img">
+                                        <img src="https://media-ak.static-adayroi.com/240_240/80/h11/h5c/26523071086622.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
+                                    </div>
+                                    <div class="w3-container w3-center" style="padding: inherit;">
+                                        <p class="bike-name-item">Ducati SuperSportS</p>
+                                        <p style="color: red;">540.000.000VND</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-third">
+                                    <div class="w3-card-4" style="border-radius: 20px; margin-top: 10%">
+                                        <div class="img">
+                                            <img src="https://media-ak.static-adayroi.com/240_240/80/hf3/h3f/26524582346782.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
+                                        </div>
+                                        <div class="w3-container w3-center" style="padding: inherit;">
+                                            <p class="bike-name-item">Ducati Panigale 959</p>
+                                            <p style="color: red;">593.000.000VND</p>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+        </section>
+        <section id="ebike" style="padding-top: 80px; padding-bottom: 80px;">
+            <div class="title">
+                <h2 class="title-content">Xe máy điện</h2>
+            </div>
+            <img src="https://vcdn-vnexpress.vnecdn.net/2018/11/25/VinFastKlaraVnE01500TOP-154313-3702-1833-1543139003_1200x0.jpg"
+            style=" width : 100%; height : 100%; " alt="xe-may-dien-vinfast">
+            <div class="container">
                 <div class="w3-row-padding" style="padding: 0;">
                     <div class="w3-third">
                         <div class="w3-card-4" style="border-radius: 20px; margin-top: 10%">
@@ -97,7 +224,7 @@
                                 <img src="https://media-ak.static-adayroi.com/240_240/80/h5f/hb2/26863536767006.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
                             </div>
                             <div class="w3-container w3-center" style="padding: inherit;">
-                                <p>Xe máy điện Vinfast Ludo(Đỏ)</p>
+                                <p class="bike-name-item">Xe máy điện Vinfast Ludo(Đỏ)</p>
                                 <p style="color: red;">20.990.000VND</p>
                             </div>
                         </div>
@@ -108,7 +235,7 @@
                                     <img src="https://media-ak.static-adayroi.com/240_240/80/h3b/hca/26865718984734.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
                                 </div>
                                 <div class="w3-container w3-center" style="padding: inherit;">
-                                    <p>Xe máy điện Vinfast Ludo(xanh)</p>
+                                    <p class="bike-name-item">Xe máy điện Vinfast Ludo(xanh)</p>
                                     <p style="color: red;">20.990.000VND</p>
                                 </div>
                             </div>
@@ -119,7 +246,7 @@
                                         <img src="https://media-ak.static-adayroi.com/240_240/80/hc7/h05/26866874515486.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
                                     </div>
                                     <div class="w3-container w3-center" style="padding: inherit;">
-                                        <p>Xe máy điện Vinfast Ludo(Ghi)</p>
+                                        <p class="bike-name-item">Xe máy điện Vinfast Ludo(Ghi)</p>
                                         <p style="color: red;">20.990.000VND</p>
                                     </div>
                                 </div>
@@ -132,7 +259,7 @@
                                     <img src="https://media-ak.static-adayroi.com/240_240/70/hf9/hbb/17277228613662.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
                                 </div>
                                 <div class="w3-container w3-center" style="padding: inherit;">
-                                    <p>Xe máy điện Vinfast Klara 2(Đỏ)</p>
+                                    <p class="bike-name-item">Xe máy điện Vinfast Klara 2(Đỏ)</p>
                                     <p style="color: red;">30.000.000VND</p>
                                 </div>
                             </div>
@@ -143,7 +270,7 @@
                                         <img src="https://media-ak.static-adayroi.com/240_240/70/hf9/hbb/17277228613662.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
                                     </div>
                                     <div class="w3-container w3-center" style="padding: inherit;">
-                                        <p>Xe máy điện Vinfast Klara 2(Trắng)</p>
+                                        <p class="bike-name-item">Xe máy điện Vinfast Klara 2(Trắng)</p>
                                         <p style="color: red;">30.000.000VND</p>
                                     </div>
                                 </div>
@@ -154,7 +281,7 @@
                                             <img src="https://media-ak.static-adayroi.com/240_240/70/heb/hca/17277228711966.jpg" alt="ebike_do" style="width:100%; border-radius: 20px; ">
                                         </div>
                                         <div class="w3-container w3-center" style="padding: inherit;">
-                                            <p>Xe máy điện Vinfast Klara 2(Ghi)</p>
+                                            <p class="bike-name-item">Xe máy điện Vinfast Klara 2(Ghi)</p>
                                             <p style="color: red;">30.000.000VND</p>
                                         </div>
                                     </div>
@@ -162,10 +289,56 @@
                     </div>
             </div>
         </section>
-        <section id="contact"></section>
     </main>
-    <footer>
+    <footer id="contact">
+        <div class="container" style="display: flex; justify-content: space-around;">
+            <div class="contact-us menu">
+                <div class="contact-title">
+                    <h4 class="contact-title-content">Contact us</h4>
+                </div>
+                <div class="contact-infor">
+                    <p class="contact-infor-1">1900 232389</p>
+                    <p class="contact-infor-1">cskh@vinfast.vn</p>
+                </div>
+            </div>
+            <div class="vinfast menu">
+                <div class="contact-title">
+                        <h4 class="contact-title-content">Vinfast</h4>
+                </div>
+                <div class="contact-infor">
+                    <a class="linkitem1" href="https://vinfast.vn/vi/tin-tuc">Tin Tức</a>
+                    <br>
+                    <a class="linkitem1" href="https://vinfast.vn/vi/showroom-va-dai-ly">Hệ thống phân phối</a>
+                    <br>
+                    <a class="linkitem1" href="https://vinfast.vn/vi/contact-us">Liên Hệ</a>
+                </div>
+            </div>
+            <div class="vinfast-car menu">
+                <div class="contact-title">
+                        <h4 class="contact-title-content">Xe Ô Tô VinFast</h4>
+                </div>
+                <div class="vinfast-car-infor">
+                    <a  class="linkitem1" href="https://oto.vinfast.vn/vi/lux-a20" >Lux A2.0</a>
+                    <br>
+                    <a class="linkitem1" href="https://oto.vinfast.vn/vi/lux-sa20">Lux SA2.0</a>
+                    <br>
+                    <a class="linkitem1" href="https://oto.vinfast.vn/vi/fadil">Fadil</a>
+                    <br>
+                    <a class="linkitem1" href="https://oto.vinfast.vn/vi/he-thong-phan-phoi">Danh sách điểm bán</a>
+                </div>
+            </div>
+            <div class="ebike-vinfast menu">
+                <div class="contact-title">
+                        <h4 class="contact-title-content">Xe Máy Điện VinFast</h4>
+                </div>
+                <div class="ebkie-vinfast-infor">
+                    <a class="linkitem1" href="https://xemaydien.vinfast.vn/klara">Klara</a>
+                    <br>
+                    <a class="linkitem1" href="https://xemaydien.vinfast.vn/he-thong-phan-phoi">Danh sách điểm bán</a>
 
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
