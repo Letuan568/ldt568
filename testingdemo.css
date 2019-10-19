@@ -1,0 +1,48 @@
+body{
+    margin:0;
+}
+
+
+.containercar {
+    background: white;
+    max-width: device-width;
+    max-height: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   }
+.containercarlist {
+    background: white;
+    max-width: device-width;
+    max-height: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   }
+.containercarlist{
+    padding: 40px;
+}
+.containercar{
+    padding: 15px;
+}
+.xe{
+    font-size: 1em;
+    padding: 10px;
+    color: rgb(102, 64, 64);
+    border: 2px solid rgb(107, 32, 32);
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+   }
+
+
+
+
+
+
+
