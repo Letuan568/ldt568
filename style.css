@@ -170,13 +170,4 @@ footer{
   padding: 15px;
   padding-top: 80px;
 }
-.xe{
-  font-size: 1em;
-  padding: 10px;
-  color: rgb(102, 64, 64);
-  border: 2px solid rgb(107, 32, 32);
-  border-radius: 10px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
- }
+
