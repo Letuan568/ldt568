@@ -79,6 +79,7 @@ cursor: pointer;
 }
 a.linkitem1:hover, .contact-infor-1:hover{
   color: red;
+  cursor: pointer;
 }
 .contact-infor-1{
   margin: 0px;
@@ -117,6 +118,7 @@ h2 {
 .bike-name-item:hover{
   color: red;
   font-size: 15px;
+  cursor: pointer;
 }
 footer{
   background-color:#F7F7F7;
@@ -170,4 +172,14 @@ footer{
   padding: 15px;
   padding-top: 80px;
 }
-
+.xe{
+  font-size: 1em;
+  padding: 10px;
+  color: rgb(102, 64, 64);
+  border: 2px solid rgb(107, 32, 32);
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+ }
+ 
